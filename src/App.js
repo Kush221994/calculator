@@ -1,20 +1,12 @@
 import React from "react";
-// import Display from "./Display";
-import Buttons from "./Buttons";
-import Operators from "./Operators";
-const App= () => {
-  return (
-    <>
-      <div className="calc">
-{/* <Display /> */}
-<div className="keypad">
-<Buttons />
-<Operators /> 
-</div>
+import Calculator from "./components/calculator/calculator";
 
-      </div>
-    </>
-  )
-}
+const App = () => {
+  return (
+    <div className="app">
+      <Calculator />
+    </div>
+  );
+};
 
 export default App;
